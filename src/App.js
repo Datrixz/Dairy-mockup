@@ -1,15 +1,15 @@
 import { Pixel as Phone } from "react-device-mockups";
 import "html5-device-mockups/dist/device-mockups.min.css";
 import { Box } from "@mui/material";
-import { useTheme } from "@mui/material/styles";
-import useMediaQuery from "@mui/material/useMediaQuery";
+// import { useTheme } from "@mui/material/styles";
+// import useMediaQuery from "@mui/material/useMediaQuery";
 
 function App() {
-  const theme = useTheme();
-  const matches = useMediaQuery(theme.breakpoints.down("md"));
-  if(matches){
-    window.location.assign('https://apnadairy.netlify.app')
-  }
+  // const theme = useTheme();
+  // const matches = useMediaQuery(theme.breakpoints.down("md"));
+  // // if(matches){
+  // //   window.location.assign('https://apnadairy.netlify.app')
+  // // }
   return (
     <>
       <Box
