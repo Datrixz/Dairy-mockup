@@ -9,7 +9,6 @@ function App() {
   const matches = useMediaQuery(theme.breakpoints.down("md"));
   if(matches){
     window.location.assign('https://apnadairy.netlify.app')
-
   }
   return (
     <>
@@ -21,7 +20,7 @@ function App() {
           height: "100vh",
         }}
       >
-        <Phone width={300} data-orientation="potrait" color="black">
+        <Phone width={350} data-orientation="potrait" color="black">
           <iframe
             title="showcase"
             src="https://apnadairy.netlify.app"
