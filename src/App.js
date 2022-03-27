@@ -3,14 +3,16 @@ import "html5-device-mockups/dist/device-mockups.min.css";
 import { Box } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
-import Comp from "./Comp";
 
 function App() {
   const theme = useTheme();
-  const matches = useMediaQuery(theme.breakpoints.up("sm"));
+  const matches = useMediaQuery(theme.breakpoints.down("md"));
+  if(matches){
+    window.location.assign('https://apnadairy.netlify.app')
 
+  }
   return (
-    <>{matches?
+    <>
       <Box
         className="App"
         sx={{
@@ -22,7 +24,7 @@ function App() {
         <Phone width={300} data-orientation="potrait" color="black">
           <iframe
             title="showcase"
-            src="https://pranju.netlify.app"
+            src="https://apnadairy.netlify.app"
             style={{
               width: "100%",
               height: "100%",
@@ -31,7 +33,7 @@ function App() {
             }}
           />
         </Phone>
-      </Box>:<Comp/>}
+      </Box>
     </>
   );
 }
