@@ -23,7 +23,7 @@ function App() {
         <Phone width={350} data-orientation="potrait" color="black">
           <iframe
             title="showcase"
-            src="https://www.figma.com/proto/GGu9sKKodfqIKKbFwawR5Z?node-id=0%3A1"
+            src="https://apnadairy.netlify.app"
             style={{
               width: "100%",
               height: "100%",
